@@ -31,7 +31,7 @@ tags: [Tomcat,GZIP]
 
 ### 修改配置
 - 修改server.xml配置文件,多加一对<Host></Host>配置
-    ``` bash
+    ``` java
         <Engine name="Catalina" defaultHost="localhost">
               <Realm className="org.apache.catalina.realm.LockOutRealm">
                 <Realm className="org.apache.catalina.realm.UserDatabaseRealm"

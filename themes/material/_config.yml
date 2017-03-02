@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/favicon.png"
-    high_res_favicon: "/img/favicon.png"
-    apple_touch_icon: "/img/favicon.png"
+    favicon: "//image.lfdevelopment.cn/favicon.ico"
+    high_res_favicon: "//image.lfdevelopment.cn/blog/duoshuologo.jpg"
+    apple_touch_icon: "//image.lfdevelopment.cn/blog/duoshuologo.jpg"
     keywords:
 
 # Jump Links Settings
@@ -14,6 +14,9 @@ url:
     rss:
     daily_pic: "#"
     logo: "#"
+
+#footer的跳转的主页链接
+indexURL: http://joylau.cn
 
 
 # ---------------------------------------------------------------
@@ -47,7 +50,7 @@ reading:
 # Thumbnail Settings
 thumbnail:
     purecolor:    #填入颜色代码。如果文章内无设置缩略图，此项又不为空，则使用纯色缩略图。
-    random_amount: 19   #随机图片数量，根据 主题文件夹 -> source -> img -> random 中的图片数量设置。
+    random_amount: 30   #随机图片数量，根据 主题文件夹 -> source -> img -> random 中的图片数量设置。
 
 # 用于设置站点背景。
 
@@ -59,19 +62,19 @@ thumbnail:
 # type=: A (animal), C (culture), N (nature), S (space), T (travel)。
 background:
     purecolor: "#F5F5F5"
-    bgimg: "/img/bg.png"
+    bgimg: "//image.lfdevelopment.cn/life/bg.png"
     bing:
         enable: false
         parameter:
 
 # Images Settings
 img:
-    logo: "/img/logo.png" #显示于 blog_info 模块中。
-    avatar: "/img/avatar.png" #你的头像设置。
-    daily_pic: "/img/daily_pic.png" #显示于 daily_pic 模块中。
-    sidebar_header: "/img/sidebar_header.png" #显示于 sidebar 顶部。
-    footerico: "/img/footer/footer_ico-"  #设置 footer 中 SNS 图标的路径。
-    random_thumbnail: "/img/random/material-"  #随机缩略图的路径。
+    logo: "//image.lfdevelopment.cn/blog/JoyLau.jpg" #显示于 blog_info 模块中。
+    avatar: "//image.lfdevelopment.cn/blog/JoyLau.jpg" #你的头像设置。
+    daily_pic: "//image.lfdevelopment.cn/life/daily_pic.png" #显示于 daily_pic 模块中。
+    sidebar_header: "//image.lfdevelopment.cn/life/sidebar_header.png" #显示于 sidebar 顶部。
+    footerico: "//image.lfdevelopment.cn/life/footer_ico-"  #设置 footer 中 SNS 图标的路径。
+    random_thumbnail: "//image.lfdevelopment.cn/life/random/material-"  #随机缩略图的路径。
     footer_image:     #你可以在侧边栏底部放置任何你想要的图片。
         #upyun_logo:
             #link: "https://www.upyun.com/"
@@ -91,7 +94,7 @@ card_elevation: 2  #用于设置文章列表的卡片阴影，如无特殊要求
 # SNS Menu 用于填写你的 SNS 信息，除了 email，其他信息会以按钮的形式显示在 footer。
 sns:
     email: joylau@joylau.cn
-    facebook: "https://www.facebook.com/facebook"
+    facebook: "https://www.facebook.com/profile.php?id=100007776496425"
     twitter: "https://twitter.com/twitter"
     googleplus: "https://www.google.com/"
     weibo:
@@ -160,8 +163,8 @@ topPost: false
 # Available value of "use":
 #     duoshuo | disqus | disqus_click
 comment:
-    use:
-    shortname:
+    use: duoshuo
+    shortname: life-lfdevelopment
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
 
@@ -169,9 +172,8 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use:
-    path: search.xml
-    field: post
+    use: local
+    swiftype_key:
 
 # Analytics Systems
 analytics:
@@ -191,3 +193,8 @@ busuanzi:
     all_site_uv: true
     post_pv: true
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+
+#CDN服务器配置
+cdn-css: //css.lfdevelopment.cn
+cdn-js: //js.lfdevelopment.cn
+cdn-image: //image.lfdevelopment.cn

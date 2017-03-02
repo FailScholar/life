@@ -1,10 +1,4 @@
 <head>
-    <!-- 
-        © Material Theme
-        https://github.com/viosey/hexo-theme-material
-        Version: 1.3.0 -->
-
-    <!-- Title -->
     <%
         var title = page.title;
 
@@ -39,7 +33,8 @@
 
     <!-- Meta & Info -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="<%= theme.uiux.android_chrome_color %>">
     <meta name="author" content="<%= config.author %>">
@@ -70,7 +65,7 @@
     <% if(page.tags && page.tags.each) { page.tags.each(function(tag){ %><meta property="og:article:tag" content="<%= tag.name %>"> <% })} %>
 
     <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/css/ie-blocker.css">
+        <link rel="stylesheet" href="<%- theme.cdn-css %>/css/ie-blocker.css">
 
         <% if(config.language === 'zh-CN') { %>
             <script src="/js/ie-blocker.zhCN.js"></script>
@@ -89,6 +84,11 @@
 
     <!-- UC Browser Compatible -->
     <script>
+        <!-- 加载定义多说的duoshuoQuery -->
+        <% if(theme.comment.use === 'duoshuo') { %>
+        var duoshuoQuery = {short_name:"<%=theme.comment.shortname%>"};
+        <% } %>
+
         var agent = navigator.userAgent.toLowerCase();
         if(agent.indexOf('ucbrowser')>0) {
             document.write("<%- css('css/uc').replace(/\"/g,"\\\"") %>");
