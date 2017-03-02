@@ -69,11 +69,11 @@ background:
 
 # Images Settings
 img:
-    logo: "//image.lfdevelopment.cn/blog/JoyLau.jpg" #显示于 blog_info 模块中。
+    logo: "//image.lfdevelopment.cn/life/M.png" #显示于 blog_info 模块中。
     avatar: "//image.lfdevelopment.cn/blog/JoyLau.jpg" #你的头像设置。
     daily_pic: "//image.lfdevelopment.cn/life/daily_pic.png" #显示于 daily_pic 模块中。
     sidebar_header: "//image.lfdevelopment.cn/life/sidebar_header.png" #显示于 sidebar 顶部。
-    footerico: "//image.lfdevelopment.cn/life/footer_ico-"  #设置 footer 中 SNS 图标的路径。
+    footerico: "//image.lfdevelopment.cn/life/footer/footer_ico-"  #设置 footer 中 SNS 图标的路径。
     random_thumbnail: "//image.lfdevelopment.cn/life/random/material-"  #随机缩略图的路径。
     footer_image:     #你可以在侧边栏底部放置任何你想要的图片。
         #upyun_logo:
