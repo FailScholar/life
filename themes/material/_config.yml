@@ -1,0 +1,193 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Head info
+head:
+    favicon: "/img/favicon.png"
+    high_res_favicon: "/img/favicon.png"
+    apple_touch_icon: "/img/favicon.png"
+    keywords:
+
+# Jump Links Settings
+url:
+    rss:
+    daily_pic: "#"
+    logo: "#"
+
+
+# ---------------------------------------------------------------
+# Style Settings
+# ---------------------------------------------------------------
+
+# Schemes
+scheme: Paradox
+#scheme: Isolation
+
+# UI & UX: slogan, color, effect
+uiux:
+    slogan: "JoyLau的生活记录" #显示在 blog_info 模块中的标语，现在可以设置多行标语：
+    theme_color: "#0097A7"  #主题主要颜色。大部分地方使用此颜色。
+    theme_sub_color: "#00838F" #主题辅助颜色。
+    hyperlink_color: "#00838F" #超链接颜色。
+    button_color: "#757575" #按钮颜色，例如 toTop 或 menu_button。
+    android_chrome_color: "#0097A7" #安卓 Chrome 浏览器地址栏颜色。
+    nprogress_color: "#29d" #页面加载时顶部加载进度条的颜色。
+    nprogress_buffer: "800" #页面加载时顶部加载进度条的缓冲。
+
+# JS Effect Switches
+js_effect:
+    fade: true #页面加载时部分模块的渐显效果。默认为 true。
+    smoothscroll: true #页面平滑滚动特效。默认为 false。
+
+# Reading experience
+reading:
+    entry_excerpt: 80 #首页文章输出摘要的字符长度。默认为80。
+
+# Thumbnail Settings
+thumbnail:
+    purecolor:    #填入颜色代码。如果文章内无设置缩略图，此项又不为空，则使用纯色缩略图。
+    random_amount: 19   #随机图片数量，根据 主题文件夹 -> source -> img -> random 中的图片数量设置。
+
+# 用于设置站点背景。
+
+# purecolor: 填入颜色代码。则站点使用纯色背景。
+# bgimg: 背景地址，默认调用 主题文件夹 -> source -> img 中的 bg.png。可更换此图片或者自己填入 url。
+# bing: 用于启用 bing 图片。
+# parameter 参数可用：new, color=, type=。
+# color=: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow。
+# type=: A (animal), C (culture), N (nature), S (space), T (travel)。
+background:
+    purecolor: "#F5F5F5"
+    bgimg: "/img/bg.png"
+    bing:
+        enable: false
+        parameter:
+
+# Images Settings
+img:
+    logo: "/img/logo.png" #显示于 blog_info 模块中。
+    avatar: "/img/avatar.png" #你的头像设置。
+    daily_pic: "/img/daily_pic.png" #显示于 daily_pic 模块中。
+    sidebar_header: "/img/sidebar_header.png" #显示于 sidebar 顶部。
+    footerico: "/img/footer/footer_ico-"  #设置 footer 中 SNS 图标的路径。
+    random_thumbnail: "/img/random/material-"  #随机缩略图的路径。
+    footer_image:     #你可以在侧边栏底部放置任何你想要的图片。
+        #upyun_logo:
+            #link: "https://www.upyun.com/"
+            #src: "/img/upyun_logo.png"
+
+# Custom Fonts  用于设置站点的字体。该字体设定较为规范，如无特殊要求 无需额外修改。
+fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+
+# Card Elevation Level
+card_elevation: 2  #用于设置文章列表的卡片阴影，如无特殊要求 无需额外修改。
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# SNS Menu 用于填写你的 SNS 信息，除了 email，其他信息会以按钮的形式显示在 footer。
+sns:
+    email: joylau@joylau.cn
+    facebook: "https://www.facebook.com/facebook"
+    twitter: "https://twitter.com/twitter"
+    googleplus: "https://www.google.com/"
+    weibo:
+    instagram:
+    tumblr:
+    github:
+    linkedin:
+    zhihu:
+    bilibili:
+    telegram:
+
+# SNS Share Switch 用于定义分享菜单中的项目， false 的项将不会显示在分享菜单中。
+sns_share:
+    twitter: true
+    facebook: true
+    googleplus: true
+    weibo: true
+    linkedin: false
+    qq: false
+    telegram: false
+
+# Sidebar Customize 用于设置 Paradox 侧边栏用户下拉菜单，默认为空。
+sidebar:
+    dropdown:
+        Email Me:
+            link: "#"
+            icon: email
+    homepage:
+        use: true
+        icon: home
+        divider: true
+    archives:
+        use: true
+        icon: inbox
+        divider: false
+    categories:
+        use: false
+        icon: chrome_reader_mode
+        divider: false
+    pages:
+        #About:
+            #link: "/about"
+            #icon: person
+            #divider: false
+    article_num:
+        use: true
+        divider: false
+    footer:
+        divider: true
+        theme: true
+        support: false
+        feedback: false
+        material: false
+
+# Qrcode for redirect at other device  用于在文章页中显示二维码，扫描二维码即可直接打开文章。需要 hexo-helper-qrcode 支持，使用 npm install hexo-helper-qrcode --save 进行安装。
+qrcode: true
+
+# Support Pin posts on the top of the list
+topPost: false
+
+# ---------------------------------------------------------------
+# Integrated Services
+# ---------------------------------------------------------------
+
+# Comment Systems
+# Available value of "use":
+#     duoshuo | disqus | disqus_click
+comment:
+    use:
+    shortname:
+    duoshuo_thread_key_type: path
+    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+
+# Search Systems
+# Available value:
+#     swiftype | google | local
+search:
+    use:
+    path: search.xml
+    field: post
+
+# Analytics Systems
+analytics:
+    baidu_id:
+    google_id:
+
+# Leancloud Views
+leancloud:
+    enable: false
+    app_id: #你的 app_id
+    app_key: #你的 app_key
+    av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
+
+# Busuanzi 不蒜子 Views
+busuanzi:
+    enable: true
+    all_site_uv: true
+    post_pv: true
+    busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
