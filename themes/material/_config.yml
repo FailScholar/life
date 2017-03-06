@@ -166,7 +166,7 @@ comment:
     use: duoshuo
     shortname: life-lfdevelopment
     duoshuo_thread_key_type: path
-    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+    duoshuo_embed_js_url: "//static.duoshuo.com/embed.js"
 
 # Search Systems
 # Available value:
@@ -185,14 +185,14 @@ leancloud:
     enable: false
     app_id: #你的 app_id
     app_key: #你的 app_key
-    av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
+    av_core_mini: "//cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
 
 # Busuanzi 不蒜子 Views
 busuanzi:
     enable: true
     all_site_uv: true
     post_pv: true
-    busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+    busuanzi_pure_mini_js: "//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
 
 #CDN服务器配置
 cdn-css: //css.lfdevelopment.cn

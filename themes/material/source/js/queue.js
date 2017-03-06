@@ -47,5 +47,5 @@ $(document).ready(function(){
         setInterval(function(){
             queue.execNext();
         },500);
-    },3000);
+    },500);
 });
