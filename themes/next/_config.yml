@@ -121,7 +121,8 @@ font:
     family: PT Mono
     size: 12
 
-
+#多说热评文章
+duoshuo_hotartical: true
 
 
 # ---------------------------------------------------------------
@@ -282,7 +283,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+#duoshuo_shortname: blog-lfdevelopment
 
 # Disqus
 #disqus_shortname:
@@ -438,7 +439,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
