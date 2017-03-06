@@ -7,7 +7,7 @@ title: JoyLau
 subtitle: 刘法的生活记录
 description: JoyLau的生活记录
 author: JoyLau
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
